@@ -28,7 +28,7 @@ public class NamesMain {
 
     private static void openTextEditor(File file) {
         ProcessBuilder processBuilder = new ProcessBuilder();
-        processBuilder.command("cmd.exe", "/c", file.getAbsolutePath());
+        processBuilder.command("open", file.getAbsolutePath());
         try {
             processBuilder.start();
         } catch (IOException e) {
